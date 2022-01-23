@@ -1,4 +1,9 @@
 import { deployBundle } from "@smol-frontend/deploy-cloudflare";
+import dotenv from "dotenv";
+
+dotenv.config({
+  path: new URL(".env", import.meta.url).pathname,
+});
 
 await deployBundle({
   name: "example-smol-frontend",
@@ -9,8 +14,7 @@ await deployBundle({
   ).pathname,
   cloudflare: {
     accountIdentifier: process.env.CF_ACCOUNT_IDENTIFIER,
-    authEmail: process.env.CF_AUTH_EMAIL,
-    authKey: process.env.CF_AUTH_KEY,
+    apiToken: process.env.CF_API_TOKEN,
     kvNamespaceIdentifier: process.env.CF_KV_NAMESPACE,
   },
 });

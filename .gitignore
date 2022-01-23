@@ -2,3 +2,4 @@
 .idea
 .yalc
 yalc.lock
+.env
