@@ -1,7 +1,5 @@
-import {ExampleSmolFrontend} from "../lib/main"
+import ExampleSmolFrontend from "../lib";
 
-const App = () => (
-    <ExampleSmolFrontend name={"Test"}/>
-)
+const App = () => <ExampleSmolFrontend name={"Test"} />;
 
 export default App;

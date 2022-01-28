@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     lib: {
-      entry: "./lib/main.tsx",
+      entry: "./lib/index.tsx",
       name: "ExampleSmolFrontend",
       fileName: (format) => `example-smol-frontend.${format}.js`,
       formats: ["umd"],
