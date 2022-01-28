@@ -12,6 +12,7 @@ await deployBundle({
     "../dist/example-smol-frontend.umd.js",
     import.meta.url
   ).pathname,
+  cssBundlePath: new URL("../dist/style.css", import.meta.url).pathname,
   cloudflare: {
     accountIdentifier: process.env.CF_ACCOUNT_IDENTIFIER,
     apiToken: process.env.CF_API_TOKEN,
