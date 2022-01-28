@@ -6,7 +6,7 @@ dotenv.config({
 });
 
 await deployBundle({
-  name: "example-smol-frontend",
+  name: "ExampleSmolFrontend",
   contractVersion: "1.0.0",
   umdBundlePath: new URL(
     "../dist/example-smol-frontend.umd.js",
