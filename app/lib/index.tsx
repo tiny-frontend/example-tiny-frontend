@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+import { Button } from "./button";
 import styles from "./index.module.css";
 
 interface Props {
@@ -12,9 +13,7 @@ const ExampleSmolFrontend: React.FC<Props> = ({ name }) => {
     <div className={styles.container}>
       <h1>Hello {name}!</h1>
       <p>You pressed the button {value} times!</p>
-      <button onClick={() => setValue((value) => value + 1)}>
-        Press the button!
-      </button>
+      <Button onClick={() => setValue((value) => value + 1)}>Press me!</Button>
     </div>
   );
 };
