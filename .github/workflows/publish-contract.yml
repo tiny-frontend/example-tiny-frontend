@@ -1,4 +1,4 @@
-name: Publish @tiny-frontent/example-tiny-frontend-contract npm package
+name: Publish @tiny-frontend/example-tiny-frontend-contract npm package
 on:
   release:
     types: [created]

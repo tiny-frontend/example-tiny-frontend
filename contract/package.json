@@ -1,7 +1,7 @@
 {
-  "name": "@tiny-frontent/example-tiny-frontend-contract",
+  "name": "@tiny-frontend/example-tiny-frontend-contract",
   "tinyFrontendName": "ExampleTinyFrontend",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "scripts": {
     "dev": "vite",
     "build": "vite build && tsc --emitDeclarationOnly",
