@@ -1,5 +1,7 @@
 import { defineConfig } from "vite";
 
+import { rollupExternals } from "./rollupExternals";
+
 // https://vitejs.dev/config/
 export default defineConfig({
   build: {
@@ -9,12 +11,7 @@ export default defineConfig({
       fileName: (format) => `example-tiny-frontend-contract.${format}.js`,
     },
     rollupOptions: {
-      external: ["react"],
-      output: {
-        globals: {
-          react: "React",
-        },
-      },
+      ...rollupExternals,
     },
   },
 });

@@ -1,7 +1,16 @@
 import { deployBundle } from "@tiny-frontend/deploy-cloudflare";
 import dotenv from "dotenv";
+import { readFile } from "fs/promises";
 
-import { tinyFrontendName, version } from "../../contract/package.json";
+const contractPackageJsonPath = new URL(
+  "../../contract/package.json",
+  import.meta.url
+).pathname;
+const packageJsonAsBuffer = await readFile(contractPackageJsonPath);
+
+const { tinyFrontendName, version } = JSON.parse(
+  packageJsonAsBuffer.toString()
+);
 
 dotenv.config({
   path: new URL(".env", import.meta.url).pathname,

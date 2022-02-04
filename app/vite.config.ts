@@ -1,27 +1,21 @@
 import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
 
+import { tinyFrontendName } from "../contract/package.json";
+import { rollupExternals } from "../contract/rollupExternals";
+
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
   build: {
     lib: {
       entry: "./lib/index.tsx",
-      name: "ExampleTinyFrontend",
+      name: tinyFrontendName,
       fileName: (format) => `example-tiny-frontend.${format}.js`,
       formats: ["umd"],
     },
     rollupOptions: {
-      // make sure to externalize deps that shouldn't be bundled
-      // into your library
-      external: ["react"],
-      output: {
-        // Provide global variables to use in the UMD build
-        // for externalized deps
-        globals: {
-          react: "React",
-        },
-      },
+      ...rollupExternals,
     },
   },
 });
