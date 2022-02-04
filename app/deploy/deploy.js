@@ -1,13 +1,15 @@
 import { deployBundle } from "@tiny-frontend/deploy-cloudflare";
 import dotenv from "dotenv";
 
+import { tinyFrontendName, version } from "../../contract/package.json";
+
 dotenv.config({
   path: new URL(".env", import.meta.url).pathname,
 });
 
 await deployBundle({
-  name: "ExampleTinyFrontend",
-  contractVersion: "1.0.0",
+  name: tinyFrontendName,
+  contractVersion: version,
   umdBundlePath: new URL(
     "../dist/example-tiny-frontend.umd.js",
     import.meta.url
