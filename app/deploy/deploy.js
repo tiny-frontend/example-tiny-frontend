@@ -16,7 +16,7 @@ await deployBundle({
   ).pathname,
   cssBundlePath: new URL("../dist/style.css", import.meta.url).pathname,
   cloudflare: {
-    accountIdentifier: process.env.CF_ACCOUNT_IDENTIFIER,
+    accountIdentifier: process.env.CF_ACCOUNT_ID,
     apiToken: process.env.CF_API_TOKEN,
     kvNamespaceIdentifier: process.env.CF_KV_NAMESPACE,
   },
