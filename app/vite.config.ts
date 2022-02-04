@@ -7,8 +7,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: "./lib/index.tsx",
-      name: "ExampleSmolFrontend",
-      fileName: (format) => `example-smol-frontend.${format}.js`,
+      name: "ExampleTinyFrontend",
+      fileName: (format) => `example-tiny-frontend.${format}.js`,
       formats: ["umd"],
     },
     rollupOptions: {

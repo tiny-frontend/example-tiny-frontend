@@ -1,4 +1,4 @@
-import { deployBundle } from "@smol-frontend/deploy-cloudflare";
+import { deployBundle } from "@tiny-frontend/deploy-cloudflare";
 import dotenv from "dotenv";
 
 dotenv.config({
@@ -6,10 +6,10 @@ dotenv.config({
 });
 
 await deployBundle({
-  name: "ExampleSmolFrontend",
+  name: "ExampleTinyFrontend",
   contractVersion: "1.0.0",
   umdBundlePath: new URL(
-    "../dist/example-smol-frontend.umd.js",
+    "../dist/example-tiny-frontend.umd.js",
     import.meta.url
   ).pathname,
   cssBundlePath: new URL("../dist/style.css", import.meta.url).pathname,

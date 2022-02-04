@@ -7,7 +7,7 @@ interface Props {
   name: string;
 }
 
-const ExampleSmolFrontend: React.FC<Props> = ({ name }) => {
+const ExampleTinyFrontend: React.FC<Props> = ({ name }) => {
   const [value, setValue] = useState(0);
   return (
     <div className={styles.container}>
@@ -18,4 +18,4 @@ const ExampleSmolFrontend: React.FC<Props> = ({ name }) => {
   );
 };
 
-export default ExampleSmolFrontend;
+export default ExampleTinyFrontend;
