@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import { ExampleTinyFrontendType } from "../../contract/src/index";
+import { ExampleTinyFrontendType } from "../../contract/src/main";
 import { Button } from "./button";
 import styles from "./index.module.css";
 
