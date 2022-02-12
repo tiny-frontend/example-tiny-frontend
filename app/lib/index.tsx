@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 
-import { ExampleTinyFrontendType } from "../../contract/src/main";
+import { ExampleTinyFrontendProps } from "../../contract/src/props";
 import { Button } from "./button";
 import styles from "./index.module.css";
 
-const ExampleTinyFrontend: ExampleTinyFrontendType = ({ name }) => {
+const ExampleTinyFrontend: React.FC<ExampleTinyFrontendProps> = ({ name }) => {
   const [value, setValue] = useState(0);
   return (
     <div className={styles.container}>

@@ -7,7 +7,7 @@
     "build": "vite build && tsc --emitDeclarationOnly",
     "preview": "vite preview"
   },
-  "types": "./dist/src/main.d.ts",
+  "types": "./dist/contract/src/main.d.ts",
   "files": [
     "dist"
   ],
