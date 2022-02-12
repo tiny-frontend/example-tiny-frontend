@@ -14,31 +14,34 @@ const ExampleTinyFrontend: React.FC<ExampleTinyFrontendProps> = ({
 
   return (
     <div className={styles.container}>
-      <h1>Hello {name}!</h1>
+      <h1 className={styles.title}>Hello {name}!</h1>
 
-      <p>
-        I&apos;m a{" "}
-        <a
-          href="https://github.com/tiny-frontend"
-          target="_blank"
-          rel="noreferrer"
-        >
-          tiny frontend 🐰
-        </a>
-        , deployed from{" "}
-        <a
-          href="https://github.com/tiny-frontend/example-tiny-frontend"
-          target="_blank"
-          rel="noreferrer"
-        >
-          this git repository
-        </a>
-        .
-      </p>
+      <div className={styles.descriptionContainer}>
+        <p>
+          I&apos;m a{" "}
+          <a
+            href="https://github.com/tiny-frontend"
+            target="_blank"
+            rel="noreferrer"
+          >
+            tiny frontend
+          </a>{" "}
+          🐰 , I was deployed from{" "}
+          <a
+            href="https://github.com/tiny-frontend/example-tiny-frontend"
+            target="_blank"
+            rel="noreferrer"
+          >
+            this git repository
+          </a>
+          . I&apos;m just a regular React component, but my implementation was
+          loaded at runtime!
+        </p>
+        <p>
+          You pressed my button <strong>{value} times</strong>!
+        </p>
+      </div>
 
-      <p>
-        You pressed the button <strong>{value} times</strong>!
-      </p>
       <Button onClick={() => setValue((value) => value + 1)}>Press me!</Button>
     </div>
   );
