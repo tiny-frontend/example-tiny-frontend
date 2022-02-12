@@ -20,7 +20,7 @@ const ExampleTinyFrontend: React.FC<ExampleTinyFrontendProps> = ({
         <p>
           I&apos;m a{" "}
           <a
-            href="https://github.com/tiny-frontend"
+            href="https://tiny-frontend.github.io"
             target="_blank"
             rel="noreferrer"
           >
