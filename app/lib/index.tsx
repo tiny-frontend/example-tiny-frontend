@@ -36,7 +36,9 @@ const ExampleTinyFrontend: React.FC<ExampleTinyFrontendProps> = ({
         .
       </p>
 
-      <p>You pressed the button {value} times!</p>
+      <p>
+        You pressed the button <strong>{value} times</strong>!
+      </p>
       <Button onClick={() => setValue((value) => value + 1)}>Press me!</Button>
     </div>
   );
