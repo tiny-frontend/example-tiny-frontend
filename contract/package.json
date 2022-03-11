@@ -1,7 +1,7 @@
 {
   "name": "@tiny-frontend/example-tiny-frontend-contract",
   "tinyFrontendName": "ExampleTinyFrontend",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "scripts": {
     "dev": "vite",
     "build": "vite build && tsc --emitDeclarationOnly",
@@ -28,7 +28,7 @@
     "vite": "^2.7.2"
   },
   "dependencies": {
-    "@tiny-frontend/client": "^0.0.2"
+    "@tiny-frontend/client": "^0.0.3"
   },
   "peerDependencies": {
     "react": "^17.0.2"
