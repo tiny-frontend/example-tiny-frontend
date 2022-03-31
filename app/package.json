@@ -12,6 +12,14 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
+  "eslintConfig": {
+    "extends": [
+      "plugin:@cazoo/eslint/react"
+    ],
+    "rules": {
+      "react/react-in-jsx-scope": "off"
+    }
+  },
   "devDependencies": {
     "@cazoo/eslint-plugin-eslint": "^1.0.2",
     "@tiny-frontend/deploy-cloudflare": "^0.0.2",
