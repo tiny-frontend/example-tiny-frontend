@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "@cazoo/eslint-plugin-eslint": "^1.0.2",
-    "@tiny-frontend/deploy-cloudflare": "^0.0.2",
+    "@tiny-frontend/deploy-cloudflare": "^0.0.3",
     "@types/dotenv": "^8.2.0",
     "@types/node": "^17.0.10",
     "@types/react": "^17.0.33",
