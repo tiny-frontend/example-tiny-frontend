@@ -22,14 +22,11 @@
   "eslintConfig": {
     "extends": [
       "plugin:@cazoo/eslint/react"
-    ],
-    "rules": {
-      "react/react-in-jsx-scope": "off"
-    }
+    ]
   },
   "devDependencies": {
     "@cazoo/eslint-plugin-eslint": "^1.0.2",
-    "@types/react": "^17.0.2",
+    "@types/react": "^16.14.24",
     "eslint": "^7.32.0",
     "react": "^17.0.2",
     "typescript": "^4.4.4",
@@ -39,6 +36,6 @@
     "@tiny-frontend/client": "^0.0.3"
   },
   "peerDependencies": {
-    "react": "^17.0.2"
+    "react": "^16.14.0"
   }
 }
