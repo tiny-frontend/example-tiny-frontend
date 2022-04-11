@@ -1,6 +1,3 @@
-import "./styles/css-reset.css";
-import "./styles/base-style.css";
-
 import React from "react";
 import ReactDOM from "react-dom";
 
