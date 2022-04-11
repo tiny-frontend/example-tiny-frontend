@@ -4,6 +4,7 @@ import {
 } from "@tiny-frontend/client";
 import { TinyFrontendServerResponse } from "@tiny-frontend/client/dist/load.server";
 import React from "react";
+import * as StyledComponents from "styled-components";
 
 import type exportedModule from "../../app/lib/index";
 import { tinyFrontendName, version } from "../package.json";
@@ -19,6 +20,7 @@ export const loadExampleTinyFrontendServer = async (
     contractVersion: version,
     dependenciesMap: {
       react: React,
+      "styled-components": StyledComponents,
     },
   });
 
@@ -31,5 +33,6 @@ export const loadExampleTinyFrontendClient = async (
     contractVersion: version,
     dependenciesMap: {
       react: React,
+      "styled-components": StyledComponents,
     },
   });
