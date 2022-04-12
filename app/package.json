@@ -22,6 +22,8 @@
     "@cazoo-uk/cazoo-ui": "^22.1.0",
     "@cazoo/eslint-plugin-eslint": "^1.0.2",
     "@segment/consent-manager": "^5.4.0",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^12.1.2",
     "@tiny-frontend/deploy-cloudflare": "^0.0.3",
     "@types/dotenv": "^8.2.0",
     "@types/jest": "^27.4.1",
