@@ -10,7 +10,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: "./lib/index.tsx",
-      name: tinyFrontendName,
+      name: `tinyFrontendExports.${tinyFrontendName}`,
       fileName: (format) => `example-tiny-frontend.${format}.js`,
       formats: ["umd"],
     },
