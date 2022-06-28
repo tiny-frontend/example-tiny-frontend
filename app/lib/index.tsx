@@ -14,7 +14,7 @@ const ExampleTinyFrontend: React.FC<ExampleTinyFrontendProps> = ({
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Hello {name}!</h1>
+      <h1 className={styles.title}>Hello {name}! 🎉</h1>
 
       <div className={styles.descriptionContainer}>
         <p>
